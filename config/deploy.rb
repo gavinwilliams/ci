@@ -8,7 +8,7 @@ set :default_stage, "production"
 
 offroad_modules 'defaults'
 
-set :repository,  "git://github.com/gavinwilliams-fishrod/ci.git" # The location of the git repo, this is the read-only url
+set :repository,  "git@github.com:gavinwilliams-fishrod/ci.git" # The location of the git repo, this is the read-only url
 set :scm,         :git # Tells capistrano to use GIT
 set :branch,      "master"  # Tells capistrano which branch to use
 set :deploy_via,  :rsync_with_remote_cache # Tells capistrano to deploy via rsync
