@@ -16,8 +16,8 @@ set :deploy_via,  :rsync_with_remote_cache # Tells capistrano to deploy via rsyn
 
 set :local_cache, '/tmp/ci/' # Set this to a directory where you would like to store the rsync cache
 
-role(:web) { domain }                         # Your HTTP server, Apache/etc
-role(:app)  { domain }                     # This may be the same as your `Web` server
-role(:db) { domain }       # This is where Rails migrations will run
+role(:web) { domain }   # Your HTTP server, Apache/etc
+role(:app)  { domain }  # This may be the same as your `Web` server
+role(:db) { domain }    # This is where Rails migrations will run
 
 set  :keep_releases,  5 # Tells capistrano how many releases to keep
