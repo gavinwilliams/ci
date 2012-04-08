@@ -17,6 +17,7 @@ app.calculator = function(_initialValue){
 	/**
 	 * Adds a value to the current result
 	 */
+	
 	this.add = function(value){
 		_result = _result + value; 
 		return _result;
