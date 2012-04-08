@@ -27,128 +27,129 @@
 		<ol id="qunit-tests"></ol>
 		<div id="qunit-fixture"><!-- If you have DOM that needs to be manipulated, this is where it should go --></div>
 		
-		<script>
-			
-			test('calculator constructor', function(){
-				
-				/**
-				 * Specify how many assertions this test will run
-				 * if assertions do not run for any reason, this
-				 * test will fail
-				 */
-				expect(1);
-				
-				/**
-				 * Create a new calculator instance and set
-				 * initial value to 10
-				 */
-				var calculator = new app.calculator(10);
-				
-				/**
-				 * You then assert that 10 is being held as the
-				 * current result
-				 */
-				equal(calculator.getResult(), 10, 'the result should equal 10 with no operation');
-				
-			});
-			
-			test('calculator add', function(){
-				
-				/**
-				 * Specify how many assertions this test will run
-				 * if assertions do not run for any reason, this
-				 * test will fail
-				 */
-				expect(2);
-				
-				/**
-				 * Create a new calculator instance and set
-				 * initial value to 10
-				 */
-				var calculator = new app.calculator(10);
-				
-				/**
-				 * Assert that both the return value of the operation
-				 * and the getResult method both return 20
-				 */
-				equal(calculator.add(10), 20, '10 + 10 should equal 20');
-				equal(calculator.getResult(), 20, '10 + 10 should result in 20');
-				
-			});
-			
-			test('calculator subtract', function(){
-				
-				/**
-				 * Specify how many assertions this test will run
-				 * if assertions do not run for any reason, this
-				 * test will fail
-				 */
-				expect(2);
-				
-				/**
-				 * Create a new calculator instance and set
-				 * initial value to 10
-				 */
-				var calculator = new app.calculator(10);
-				
-				/**
-				 * Assert that both the return value of the operation
-				 * and the getResult method both return 5
-				 */
-				equal(calculator.subtract(5), 5, '10 - 5 should equal 5');
-				equal(calculator.getResult(), 5, '10 - 5 should equal 5');
-				
-			});
-			
-			test('calculator divide', function(){
-				
-				/**
-				 * Specify how many assertions this test will run
-				 * if assertions do not run for any reason, this
-				 * test will fail
-				 */
-				expect(2);
-				
-				/**
-				 * Create a new calculator instance and set
-				 * initial value to 10
-				 */
-				var calculator = new app.calculator(10);
-				
-				/**
-				 * Assert that both the return value of the operation
-				 * and the getResult method both return 5
-				 */
-				equal(calculator.divide(2), 5, '10 / 2 should equal 5');
-				equal(calculator.getResult(), 5, '10 / 2 should equal 5');
-				
-			});
-			
-			test('calculator multiply', function(){
-				
-				/**
-				 * Specify how many assertions this test will run
-				 * if assertions do not run for any reason, this
-				 * test will fail
-				 */
-				expect(2);
-				
-				/**
-				 * Create a new calculator instance and set
-				 * initial value to 10
-				 */
-				var calculator = new app.calculator(10);
-				
-				/**
-				 * Assert that both the return value of the operation
-				 * and the getResult method both return 20
-				 */
-				equal(calculator.multiply(2), 20, '10 * 2 should equal 20');
-				equal(calculator.getResult(), 20, '10 * 2 should equal 20');
-				
-			});
-			
-		</script>
+<script>
+	
+	
+	test('calculator constructor', function(){
+		
+		/**
+		 * Specify how many assertions this test will run
+		 * if assertions do not run for any reason, this
+		 * test will fail
+		 */
+		expect(1);
+		
+		/**
+		 * Create a new calculator instance and set
+		 * initial value to 10
+		 */
+		var calculator = new app.calculator(10);
+		
+		/**
+		 * You then assert that 10 is being held as the
+		 * current result
+		 */
+		equal(calculator.getResult(), 10, 'the result should equal 10 with no operation');
+		
+	});
+
+	test('calculator add', function(){
+		
+		/**
+		 * Specify how many assertions this test will run
+		 * if assertions do not run for any reason, this
+		 * test will fail
+		 */
+		expect(2);
+		
+		/**
+		 * Create a new calculator instance and set
+		 * initial value to 10
+		 */
+		var calculator = new app.calculator(10);
+		
+		/**
+		 * Assert that both the return value of the operation
+		 * and the getResult method both return 20
+		 */
+		equal(calculator.add(10), 20, '10 + 10 should equal 20');
+		equal(calculator.getResult(), 20, '10 + 10 should result in 20');
+		
+	});
+	
+	test('calculator subtract', function(){
+		
+		/**
+		 * Specify how many assertions this test will run
+		 * if assertions do not run for any reason, this
+		 * test will fail
+		 */
+		expect(2);
+		
+		/**
+		 * Create a new calculator instance and set
+		 * initial value to 10
+		 */
+		var calculator = new app.calculator(10);
+		
+		/**
+		 * Assert that both the return value of the operation
+		 * and the getResult method both return 5
+		 */
+		equal(calculator.subtract(5), 5, '10 - 5 should equal 5');
+		equal(calculator.getResult(), 5, '10 - 5 should equal 5');
+		
+	});
+	
+	test('calculator divide', function(){
+		
+		/**
+		 * Specify how many assertions this test will run
+		 * if assertions do not run for any reason, this
+		 * test will fail
+		 */
+		expect(2);
+		
+		/**
+		 * Create a new calculator instance and set
+		 * initial value to 10
+		 */
+		var calculator = new app.calculator(10);
+		
+		/**
+		 * Assert that both the return value of the operation
+		 * and the getResult method both return 5
+		 */
+		equal(calculator.divide(2), 5, '10 / 2 should equal 5');
+		equal(calculator.getResult(), 5, '10 / 2 should equal 5');
+		
+	});
+	
+	test('calculator multiply', function(){
+		
+		/**
+		 * Specify how many assertions this test will run
+		 * if assertions do not run for any reason, this
+		 * test will fail
+		 */
+		expect(2);
+		
+		/**
+		 * Create a new calculator instance and set
+		 * initial value to 10
+		 */
+		var calculator = new app.calculator(10);
+		
+		/**
+		 * Assert that both the return value of the operation
+		 * and the getResult method both return 20
+		 */
+		equal(calculator.multiply(2), 20, '10 * 2 should equal 20');
+		equal(calculator.getResult(), 20, '10 * 2 should equal 20');
+		
+	});
+	
+</script>
 		
 	</body>
 	
